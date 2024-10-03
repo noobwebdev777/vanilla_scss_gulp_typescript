@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// please remove the below setup
+
+@font-face {
+  font-family: "Helvetica Rounded Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Rounded Bold"),
+    url(../../assets/fonts/helvetica-rounded-bold-5871d05ead8de.woff)
+      format("woff");
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8fff4;
+
+  h1 {
+    background-color: #f08b72;
+    font-family: "Helvetica Rounded Bold";
+    color: #171a21;
+    padding: 15px;
+    border: 0.5px solid #171a21;
+    border-radius: 5px;
+  }
+
+  h1:hover {
+    background-color: #b497d6;
+    transition-duration: 1s;
+  }
+}
